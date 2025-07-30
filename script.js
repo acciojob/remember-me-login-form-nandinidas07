@@ -19,7 +19,7 @@ form.addEventListener('submit', function (e) {
   const username = usernameInput.value;
   const password = passwordInput.value;
 
-  alert(Logged in as ${username});
+  alert(`Logged in as ${username}`);
 
   if (checkbox.checked) {
     localStorage.setItem('username', username);
@@ -40,6 +40,6 @@ form.addEventListener('submit', function (e) {
 existingBtn.addEventListener('click', function () {
   const savedUsername = localStorage.getItem('username');
   if (savedUsername) {
-    alert(Logged in as ${savedUsername});
+    alert(`Logged in as ${savedUsername}`);
   }
 });
